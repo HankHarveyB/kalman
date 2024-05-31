@@ -14,8 +14,8 @@ def save_detections_to_file(detections, frame_number, output_dir):
     os.makedirs(output_dir, exist_ok=True)
     with open(os.path.join(output_dir, f'frame_{frame_number:04d}.txt'), 'w') as f:
         for detection in detections:
-            print("Detection:", detection)  # 输出检测结果以调试
-            x1, y1, x2, y2 = detection[:4]  # 使用切片操作以确保只取前四个值
+            print("Detection:", detection) 
+            x1, y1, x2, y2 = detection[:4]  
             f.write(f'0 {x1} {y1} {x2} {y2}\n')
 
 def process_video(video_path, output_dir, detector):
