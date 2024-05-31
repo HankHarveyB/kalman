@@ -1,4 +1,4 @@
-# conding:UTF-8
+# coding=gbk
 import torch
 import numpy as np
 
